@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+# Large raw datasets
+data/raw/retail_panel.csv
+data/raw/audience_signal.jsonl

@@ -1,0 +1,341 @@
+district_id,numeric_id,district_name,state,population,urban_share,true_archetype,is_historical_marketing_failure_district,total_retail_universe,panel_sampled_outlets,true_panel_coverage_pct,analytical_ground_truth_description,optimal_strategic_action
+DST_0001,1,Mumbai Suburban,Maharashtra,9356962,1.0,CORE_METRO,False,18500,17,85.5,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0002,2,Mumbai City,Maharashtra,3085411,1.0,CORE_METRO,False,6787,17,81.2,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0003,3,Pune,Maharashtra,9429408,0.61,CORE_METRO,False,15596,17,82.9,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0004,4,Thane,Maharashtra,8070032,0.77,MATURE_URBAN,False,15155,17,41.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0005,5,Palghar,Maharashtra,2990116,0.48,TYPE_C,False,4401,1,15.4,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0006,6,Nagpur,Maharashtra,4653570,0.68,MATURE_URBAN,False,8153,17,55.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0007,7,Nashik,Maharashtra,6107187,0.43,TYPE_A,False,8562,17,72.8,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0008,8,Chhatrapati Sambhajinagar,Maharashtra,3701282,0.44,TYPE_A,False,5241,17,56.7,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0009,9,Kolhapur,Maharashtra,3876001,0.32,TYPE_D,False,4837,17,68.4,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0010,10,Solapur,Maharashtra,4317756,0.32,DEVELOPING_URBAN,False,5388,17,35.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0011,11,Ahmednagar,Maharashtra,4543159,0.2,DEVELOPING_URBAN,False,4906,17,41.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0012,12,Satara,Maharashtra,3003741,0.19,DEVELOPING_URBAN,False,3201,17,50.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0013,13,Sangli,Maharashtra,2822143,0.25,DEVELOPING_URBAN,False,3245,15,35.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0014,14,Jalgaon,Maharashtra,4229917,0.32,DEVELOPING_URBAN,False,5278,17,41.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0015,15,Amravati,Maharashtra,2888445,0.36,DEVELOPING_URBAN,False,3766,17,54.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0016,16,Nanded,Maharashtra,3361292,0.27,DEVELOPING_URBAN,False,3959,17,51.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0017,17,Raigad,Maharashtra,2634200,0.37,DEVELOPING_URBAN,False,3471,17,41.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0018,18,Ratnagiri,Maharashtra,1615069,0.16,DEVELOPING_URBAN,False,1653,11,52.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0019,19,Sindhudurg,Maharashtra,849651,0.13,RURAL_LOW_DEMAND,False,834,3,25.3,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0020,20,Chandrapur,Maharashtra,2204307,0.35,DEVELOPING_URBAN,False,2843,13,35.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0021,21,Yavatmal,Maharashtra,2772348,0.22,DEVELOPING_URBAN,False,3071,17,59.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0022,22,Buldhana,Maharashtra,2586258,0.21,TYPE_B,False,2829,17,57.5,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0023,23,Latur,Maharashtra,2455543,0.25,DEVELOPING_URBAN,False,2823,16,45.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0024,24,Dhule,Maharashtra,2050862,0.28,DEVELOPING_URBAN,False,2444,12,39.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0025,25,Jalna,Maharashtra,1959046,0.19,DEVELOPING_URBAN,False,2088,17,63.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0026,26,Wardha,Maharashtra,1300774,0.33,DEVELOPING_URBAN,False,1641,9,45.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0027,27,Bhandara,Maharashtra,1200334,0.19,RURAL_LOW_DEMAND,False,1279,2,15.3,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0028,28,Gondia,Maharashtra,1322507,0.17,RURAL_LOW_DEMAND,False,1372,3,15.4,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0029,29,Washim,Maharashtra,1197160,0.18,RURAL_LOW_DEMAND,False,1259,4,25.9,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0030,30,Hingoli,Maharashtra,1177345,0.15,RURAL_LOW_DEMAND,False,1189,3,22.5,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0031,31,Gadchiroli,Maharashtra,1072942,0.11,RURAL_LOW_DEMAND,False,1023,3,25.3,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0032,32,Nandurbar,Maharashtra,1648295,0.17,DEVELOPING_URBAN,False,1710,12,56.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0033,33,Beed,Maharashtra,2585049,0.2,DEVELOPING_URBAN,False,2791,17,51.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0034,34,Dharashiv,Maharashtra,1657576,0.17,DEVELOPING_URBAN,False,1720,14,64.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0035,35,Parbhani,Maharashtra,1836086,0.31,DEVELOPING_URBAN,False,2265,13,46.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0036,36,Bengaluru Urban,Karnataka,9621551,0.91,CORE_METRO,False,18500,17,84.9,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0037,37,Bengaluru Rural,Karnataka,990923,0.27,DEVELOPING_URBAN,False,1167,9,59.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0038,38,Mysuru,Karnataka,3001127,0.41,TYPE_D,False,4123,17,72.4,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0039,39,Belagavi,Karnataka,4779661,0.25,TYPE_A,False,5496,17,72.2,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0040,40,Dharwad,Karnataka,1847023,0.57,TYPE_A,False,2951,17,66.5,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0041,41,Dakshina Kannada,Karnataka,2089649,0.48,TYPE_C,False,3075,1,15.0,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0042,42,Udupi,Karnataka,1177361,0.28,DEVELOPING_URBAN,False,1403,6,36.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0043,43,Shivamogga,Karnataka,1752759,0.36,DEVELOPING_URBAN,False,2285,12,41.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0044,44,Tumakuru,Karnataka,2678980,0.22,DEVELOPING_URBAN,False,2968,16,43.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0045,45,Ballari,Karnataka,2452595,0.37,DEVELOPING_URBAN,False,3232,15,37.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0046,46,Kalaburagi,Karnataka,2566326,0.33,DEVELOPING_URBAN,False,3238,17,42.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0047,47,Davanagere,Karnataka,1945497,0.32,DEVELOPING_URBAN,False,2427,12,38.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0048,48,Hassan,Karnataka,1776421,0.21,DEVELOPING_URBAN,False,1943,11,43.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0049,49,Mandya,Karnataka,1805769,0.17,DEVELOPING_URBAN,False,1874,13,54.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0050,50,Vijayapura,Karnataka,2177331,0.23,DEVELOPING_URBAN,False,2442,14,45.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0051,51,Bagalkote,Karnataka,1889552,0.32,DEVELOPING_URBAN,False,2358,14,46.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0052,52,Bidar,Karnataka,1700018,0.25,DEVELOPING_URBAN,False,1955,10,41.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0053,53,Chitradurga,Karnataka,1659456,0.2,DEVELOPING_URBAN,False,1792,10,43.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0054,54,Chikkamagaluru,Karnataka,1137961,0.21,DEVELOPING_URBAN,False,1244,10,63.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0055,55,Kodagu,Karnataka,554519,0.15,RURAL_LOW_DEMAND,False,560,2,23.1,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0056,56,Kolar,Karnataka,1536401,0.31,DEVELOPING_URBAN,False,1895,13,53.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0057,57,Koppal,Karnataka,1389920,0.17,RURAL_LOW_DEMAND,False,1442,3,16.4,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0058,58,Raichur,Karnataka,1928812,0.25,DEVELOPING_URBAN,False,2218,16,56.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0059,59,Ramanagara,Karnataka,1082636,0.25,DEVELOPING_URBAN,False,1245,6,39.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0060,60,Uttara Kannada,Karnataka,1437169,0.29,DEVELOPING_URBAN,False,1733,10,46.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0061,61,Yadgir,Karnataka,1174271,0.19,TYPE_B,False,1251,10,64.7,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0062,62,Chamarajanagar,Karnataka,1020791,0.17,TYPE_B,False,1059,7,56.0,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0063,63,Gadag,Karnataka,1064570,0.36,DEVELOPING_URBAN,False,1388,9,51.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0064,64,Haveri,Karnataka,1597668,0.21,DEVELOPING_URBAN,False,1747,12,55.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0065,65,Chennai,Tamil Nadu,7088403,1.0,CORE_METRO,False,15594,17,86.9,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0066,66,Coimbatore,Tamil Nadu,3458045,0.76,TYPE_D,False,6445,17,75.5,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0067,67,Madurai,Tamil Nadu,3038252,0.61,MATURE_URBAN,False,5025,17,41.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0068,68,Tiruchirappalli,Tamil Nadu,2722290,0.49,TYPE_A,False,4045,17,55.6,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0069,69,Salem,Tamil Nadu,3482056,0.51,TYPE_A,False,5271,17,61.3,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0070,70,Tirunelveli,Tamil Nadu,1665253,0.49,DEVELOPING_URBAN,False,2474,14,43.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0071,71,Tiruppur,Tamil Nadu,2479052,0.61,TYPE_C,False,4100,1,10.1,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0072,72,Erode,Tamil Nadu,2251744,0.51,DEVELOPING_URBAN,False,3409,17,63.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0073,73,Vellore,Tamil Nadu,1614242,0.43,DEVELOPING_URBAN,False,2263,17,61.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0074,74,Thanjavur,Tamil Nadu,2405890,0.35,DEVELOPING_URBAN,False,3103,17,44.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0075,75,Dindigul,Tamil Nadu,2159775,0.37,DEVELOPING_URBAN,False,2846,17,54.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0076,76,Kanchipuram,Tamil Nadu,1166401,0.63,TYPE_C,False,1961,1,12.0,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0077,77,Chengalpattu,Tamil Nadu,2556244,0.68,TYPE_C,False,4478,1,17.1,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0078,78,Cuddalore,Tamil Nadu,2605914,0.34,DEVELOPING_URBAN,False,3325,17,48.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0079,79,Dharmapuri,Tamil Nadu,1506843,0.17,TYPE_B,False,1564,9,46.6,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0080,80,Karur,Tamil Nadu,1064493,0.41,DEVELOPING_URBAN,False,1462,8,42.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0081,81,Krishnagiri,Tamil Nadu,1879809,0.23,DEVELOPING_URBAN,False,2109,14,51.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0082,82,Nagapattinam,Tamil Nadu,1616450,0.23,DEVELOPING_URBAN,False,1813,10,42.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0083,83,Namakkal,Tamil Nadu,1726601,0.4,DEVELOPING_URBAN,False,2348,16,52.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0084,84,Nilgiris,Tamil Nadu,735394,0.59,DEVELOPING_URBAN,False,1195,9,61.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0085,85,Perambalur,Tamil Nadu,565223,0.17,RURAL_LOW_DEMAND,False,586,1,19.6,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0086,86,Pudukkottai,Tamil Nadu,1618345,0.2,DEVELOPING_URBAN,False,1747,9,41.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0087,87,Ramanathapuram,Tamil Nadu,1353445,0.3,DEVELOPING_URBAN,False,1651,14,64.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0088,88,Ranipet,Tamil Nadu,1210277,0.42,DEVELOPING_URBAN,False,1679,11,50.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0089,89,Sivaganga,Tamil Nadu,1339101,0.31,DEVELOPING_URBAN,False,1652,8,37.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0090,90,Tenkasi,Tamil Nadu,1407627,0.43,DEVELOPING_URBAN,False,1973,9,36.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0091,91,Theni,Tamil Nadu,1245899,0.54,DEVELOPING_URBAN,False,1938,9,38.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0092,92,Thoothukudi,Tamil Nadu,1750176,0.5,DEVELOPING_URBAN,False,2625,17,53.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0093,93,Tirupathur,Tamil Nadu,1111812,0.38,DEVELOPING_URBAN,False,1480,11,58.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0094,94,Tiruvallur,Tamil Nadu,3728104,0.65,MATURE_URBAN,False,6375,17,47.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0095,95,Tiruvannamalai,Tamil Nadu,2464875,0.2,DEVELOPING_URBAN,False,2662,13,36.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0096,96,Tiruvarur,Tamil Nadu,1264277,0.2,DEVELOPING_URBAN,False,1365,8,46.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0097,97,Villupuram,Tamil Nadu,2093003,0.15,DEVELOPING_URBAN,False,2113,17,64.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0098,98,Virudhunagar,Tamil Nadu,1942288,0.51,DEVELOPING_URBAN,False,2940,17,50.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0099,99,Kallakurichi,Tamil Nadu,1370281,0.13,RURAL_LOW_DEMAND,False,1345,5,27.6,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0100,100,Central Delhi,Delhi NCR,582320,1.0,CORE_METRO,False,1281,14,87.0,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0101,101,East Delhi,Delhi NCR,1709346,1.0,DEVELOPING_URBAN,False,3760,17,35.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0102,102,New Delhi,Delhi NCR,142004,1.0,DEVELOPING_URBAN,False,312,2,56.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0103,103,North Delhi,Delhi NCR,887978,1.0,DEVELOPING_URBAN,False,1953,14,55.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0104,104,North East Delhi,Delhi NCR,2241624,1.0,DEVELOPING_URBAN,False,4931,17,51.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0105,105,North West Delhi,Delhi NCR,3656539,0.94,MATURE_URBAN,False,7737,17,43.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0106,106,South Delhi,Delhi NCR,2731929,0.99,CORE_METRO,False,5971,17,85.5,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0107,107,South East Delhi,Delhi NCR,2150000,1.0,DEVELOPING_URBAN,False,4730,17,38.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0108,108,South West Delhi,Delhi NCR,2292958,0.94,DEVELOPING_URBAN,False,4851,17,48.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0109,109,West Delhi,Delhi NCR,2543243,1.0,MATURE_URBAN,False,5595,17,48.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0110,110,Shahdara,Delhi NCR,1500000,1.0,DEVELOPING_URBAN,False,3300,17,63.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0111,111,Lucknow,Uttar Pradesh,4589838,0.66,MATURE_URBAN,False,7912,17,61.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0112,112,Kanpur Nagar,Uttar Pradesh,4581268,0.66,MATURE_URBAN,False,7898,17,42.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0113,113,Varanasi,Uttar Pradesh,3676841,0.43,TYPE_D,False,5154,17,70.0,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0114,114,Prayagraj,Uttar Pradesh,5954391,0.25,DEVELOPING_URBAN,False,6847,17,40.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0115,115,Agra,Uttar Pradesh,4418797,0.46,MATURE_URBAN,False,6380,17,62.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0116,116,Meerut,Uttar Pradesh,3443689,0.51,TYPE_D,False,5213,17,77.4,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0117,117,Ghaziabad,Uttar Pradesh,4681645,0.67,MATURE_URBAN,False,8136,17,44.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0118,118,Gautam Buddha Nagar,Uttar Pradesh,1648115,0.59,TYPE_C,False,2679,1,14.4,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0119,119,Bareilly,Uttar Pradesh,4448359,0.35,DEVELOPING_URBAN,False,5738,17,53.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0120,120,Aligarh,Uttar Pradesh,3673889,0.33,DEVELOPING_URBAN,False,4636,17,39.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0121,121,Moradabad,Uttar Pradesh,4772006,0.33,DEVELOPING_URBAN,False,6022,17,57.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0122,122,Saharanpur,Uttar Pradesh,3466382,0.3,DEVELOPING_URBAN,False,4228,17,51.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0123,123,Gorakhpur,Uttar Pradesh,4440895,0.19,DEVELOPING_URBAN,False,4733,17,58.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0124,124,Jhansi,Uttar Pradesh,1998603,0.42,DEVELOPING_URBAN,False,2774,17,50.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0125,125,Mathura,Uttar Pradesh,2547184,0.3,DEVELOPING_URBAN,False,3107,14,35.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0126,126,Ayodhya,Uttar Pradesh,2470996,0.14,DEVELOPING_URBAN,False,2461,14,44.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0127,127,Muzaffarnagar,Uttar Pradesh,4143512,0.29,DEVELOPING_URBAN,False,4997,17,35.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0128,128,Firozabad,Uttar Pradesh,2498156,0.34,DEVELOPING_URBAN,False,3187,17,62.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0129,129,Budaun,Uttar Pradesh,3681896,0.17,TYPE_B,False,3821,17,62.0,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0130,130,Shahjahanpur,Uttar Pradesh,3006538,0.2,DEVELOPING_URBAN,False,3247,17,59.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0131,131,Rampur,Uttar Pradesh,2335819,0.25,DEVELOPING_URBAN,False,2686,15,44.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0132,132,Mirzapur,Uttar Pradesh,2496970,0.14,DEVELOPING_URBAN,False,2486,11,36.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0133,133,Bulandshahr,Uttar Pradesh,3499171,0.25,DEVELOPING_URBAN,False,4024,17,61.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0134,134,Sambhal,Uttar Pradesh,2192790,0.18,DEVELOPING_URBAN,False,2306,17,63.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0135,135,Amroha,Uttar Pradesh,1840221,0.25,DEVELOPING_URBAN,False,2116,10,37.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0136,136,Hardoi,Uttar Pradesh,4092845,0.13,TYPE_B,False,4019,17,52.1,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0137,137,Fatehpur,Uttar Pradesh,2632733,0.12,DEVELOPING_URBAN,False,2548,12,37.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0138,138,Raebareli,Uttar Pradesh,3405559,0.09,DEVELOPING_URBAN,False,3153,17,57.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0139,139,Sitapur,Uttar Pradesh,4483992,0.12,DEVELOPING_URBAN,False,4340,17,58.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0140,140,Unnao,Uttar Pradesh,3108367,0.17,DEVELOPING_URBAN,False,3226,16,38.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0141,141,Jaunpur,Uttar Pradesh,4494204,0.08,DEVELOPING_URBAN,False,4098,17,49.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0142,142,Barabanki,Uttar Pradesh,3260699,0.1,DEVELOPING_URBAN,False,3065,17,51.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0143,143,Basti,Uttar Pradesh,2464464,0.06,DEVELOPING_URBAN,False,2178,12,43.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0144,144,Deoria,Uttar Pradesh,3100946,0.1,DEVELOPING_URBAN,False,2914,17,61.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0145,145,Gonda,Uttar Pradesh,3433919,0.07,DEVELOPING_URBAN,False,3083,17,47.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0146,146,Sultanpur,Uttar Pradesh,3797117,0.05,DEVELOPING_URBAN,False,3303,17,41.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0147,147,Ballia,Uttar Pradesh,3239774,0.09,DEVELOPING_URBAN,False,3000,17,51.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0148,148,Lakhimpur Kheri,Uttar Pradesh,4021243,0.11,DEVELOPING_URBAN,False,3836,17,56.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0149,149,Bijnor,Uttar Pradesh,3682713,0.25,DEVELOPING_URBAN,False,4235,17,41.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0150,150,Ghazipur,Uttar Pradesh,3620268,0.08,DEVELOPING_URBAN,False,3301,17,44.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0151,151,Ahmedabad,Gujarat,7214225,0.84,CORE_METRO,False,14255,17,88.0,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0152,152,Surat,Gujarat,6081322,0.8,TYPE_D,False,11676,17,73.0,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0153,153,Vadodara,Gujarat,4165626,0.5,TYPE_A,False,6248,17,63.8,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0154,154,Rajkot,Gujarat,3804556,0.58,TYPE_A,False,6132,17,65.4,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0155,155,Bhavnagar,Gujarat,2880365,0.41,MATURE_URBAN,False,3957,17,38.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0156,156,Jamnagar,Gujarat,2160119,0.45,DEVELOPING_URBAN,False,3088,16,41.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0157,157,Junagadh,Gujarat,2743082,0.33,DEVELOPING_URBAN,False,3461,17,45.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0158,158,Gandhinagar,Gujarat,1391753,0.43,TYPE_C,False,1951,1,13.9,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0159,159,Anand,Gujarat,2092745,0.3,TYPE_C,False,2553,1,10.3,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0160,160,Navsari,Gujarat,1329672,0.51,DEVELOPING_URBAN,False,2013,10,41.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0161,161,Morbi,Gujarat,960329,0.37,DEVELOPING_URBAN,False,1265,6,37.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0162,162,Bharuch,Gujarat,1551019,0.34,DEVELOPING_URBAN,False,1979,14,53.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0163,163,Valsad,Gujarat,1705678,0.37,DEVELOPING_URBAN,False,2248,12,41.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0164,164,Porbandar,Gujarat,585449,0.49,DEVELOPING_URBAN,False,869,7,62.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0165,165,Mehsana,Gujarat,2035064,0.25,DEVELOPING_URBAN,False,2340,17,60.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0166,166,Kutch,Gujarat,2092371,0.35,DEVELOPING_URBAN,False,2699,13,37.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0167,167,Banaskantha,Gujarat,3120506,0.13,DEVELOPING_URBAN,False,3064,16,42.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0168,168,Patan,Gujarat,1343734,0.21,DEVELOPING_URBAN,False,1470,10,55.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0169,169,Sabarkantha,Gujarat,2428697,0.15,DEVELOPING_URBAN,False,2452,13,41.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0170,170,Aravalli,Gujarat,1039918,0.12,RURAL_LOW_DEMAND,False,1006,2,15.9,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0171,171,Kheda,Gujarat,2299885,0.23,DEVELOPING_URBAN,False,2580,17,63.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0172,172,Mahisagar,Gujarat,994624,0.1,RURAL_LOW_DEMAND,False,934,3,22.0,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0173,173,Panchmahal,Gujarat,2390776,0.14,DEVELOPING_URBAN,False,2381,15,49.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0174,174,Dahod,Gujarat,2127086,0.09,TYPE_B,False,1969,15,59.6,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0175,175,Chhota Udaipur,Gujarat,1071831,0.07,RURAL_LOW_DEMAND,False,962,3,25.3,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0176,176,Narmada,Gujarat,590297,0.1,RURAL_LOW_DEMAND,False,554,1,16.7,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0177,177,Tapi,Gujarat,807022,0.1,RURAL_LOW_DEMAND,False,758,1,15.4,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0178,178,Dang,Gujarat,228291,0.11,TYPE_B,False,217,1,50.8,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0179,179,Gir Somnath,Gujarat,1217477,0.28,DEVELOPING_URBAN,False,1451,9,47.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0180,180,Amreli,Gujarat,1514120,0.26,DEVELOPING_URBAN,False,1762,11,49.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0181,181,Surendranagar,Gujarat,1756268,0.28,DEVELOPING_URBAN,False,2093,15,56.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0182,182,Botad,Gujarat,652556,0.33,DEVELOPING_URBAN,False,823,6,55.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0183,183,Devbhumi Dwarka,Gujarat,752484,0.28,DEVELOPING_URBAN,False,896,7,64.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0184,184,Kolkata,West Bengal,4496694,1.0,CORE_METRO,False,9892,17,81.7,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0185,185,North 24 Parganas,West Bengal,10009781,0.57,MATURE_URBAN,False,15995,17,47.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0186,186,South 24 Parganas,West Bengal,8161961,0.26,DEVELOPING_URBAN,False,9500,17,45.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0187,187,Howrah,West Bengal,4850029,0.63,TYPE_C,False,8157,1,16.6,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0188,188,Hooghly,West Bengal,5519145,0.39,TYPE_D,False,7428,17,65.0,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0189,189,Paschim Medinipur,West Bengal,5913457,0.12,DEVELOPING_URBAN,False,5724,17,40.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0190,190,Purba Medinipur,West Bengal,5095875,0.12,DEVELOPING_URBAN,False,4932,17,48.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0191,191,Purba Bardhaman,West Bengal,4835532,0.4,DEVELOPING_URBAN,False,6576,17,47.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0192,192,Paschim Bardhaman,West Bengal,2882031,0.8,TYPE_A,False,5533,17,60.6,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0193,193,Nadia,West Bengal,5167600,0.28,DEVELOPING_URBAN,False,6159,17,42.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0194,194,Murshidabad,West Bengal,7103808,0.2,DEVELOPING_URBAN,False,7672,17,62.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0195,195,Malda,West Bengal,3988845,0.14,DEVELOPING_URBAN,False,3972,17,48.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0196,196,Jalpaiguri,West Bengal,3872846,0.27,DEVELOPING_URBAN,False,4562,17,60.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0197,197,Darjeeling,West Bengal,1846823,0.39,DEVELOPING_URBAN,False,2485,16,51.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0198,198,Kalimpong,West Bengal,251642,0.28,DEVELOPING_URBAN,False,299,1,36.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0199,199,Alipurduar,West Bengal,1491250,0.18,RURAL_LOW_DEMAND,False,1568,5,28.0,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0200,200,Cooch Behar,West Bengal,2819086,0.1,DEVELOPING_URBAN,False,2649,17,60.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0201,201,Uttar Dinajpur,West Bengal,3007134,0.12,DEVELOPING_URBAN,False,2910,17,64.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0202,202,Dakshin Dinajpur,West Bengal,1676276,0.14,DEVELOPING_URBAN,False,1669,13,62.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0203,203,Birbhum,West Bengal,3502404,0.13,TYPE_B,False,3439,17,61.2,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0204,204,Bankura,West Bengal,3596674,0.08,DEVELOPING_URBAN,False,3280,17,40.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0205,205,Purulia,West Bengal,2930115,0.13,TYPE_B,False,2877,17,52.1,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0206,206,Jhargram,West Bengal,1136548,0.09,RURAL_LOW_DEMAND,False,1052,2,17.0,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0207,207,Hyderabad,Telangana,3943323,1.0,CORE_METRO,False,8675,17,83.8,"CORE METRO: High volume anchor market, high category and steady Kestrel share.",MAINTAIN_MATURE_PRESENCE
+DST_0208,208,Medchal-Malkajgiri,Telangana,2440073,0.91,DEVELOPING_URBAN,False,5060,17,36.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0209,209,Rangareddy,Telangana,2446265,0.59,TYPE_C,False,3977,1,11.8,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0210,210,Sangareddy,Telangana,1527462,0.35,TYPE_C,False,1970,1,17.9,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0211,211,Warangal,Telangana,718338,0.37,TYPE_A,False,946,7,60.3,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0212,212,Hanumakonda,Telangana,1081852,0.69,DEVELOPING_URBAN,False,1910,14,58.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0213,213,Karimnagar,Telangana,1005711,0.31,TYPE_D,False,1241,11,69.1,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0214,214,Nizamabad,Telangana,1571022,0.3,DEVELOPING_URBAN,False,1916,11,47.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0215,215,Khammam,Telangana,1401639,0.23,DEVELOPING_URBAN,False,1572,13,63.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0216,216,Nalgonda,Telangana,1618416,0.13,DEVELOPING_URBAN,False,1589,13,64.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0217,217,Mahabubnagar,Telangana,1486777,0.21,TYPE_B,False,1626,11,53.9,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0218,218,Suryapet,Telangana,1099526,0.15,RURAL_LOW_DEMAND,False,1110,3,24.1,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0219,219,Siddipet,Telangana,1012065,0.14,RURAL_LOW_DEMAND,False,1008,2,16.2,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0220,220,Jagtial,Telangana,985417,0.22,DEVELOPING_URBAN,False,1091,6,43.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0221,221,Kamareddy,Telangana,972625,0.13,RURAL_LOW_DEMAND,False,955,3,27.6,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0222,222,Mancherial,Telangana,807037,0.44,DEVELOPING_URBAN,False,1142,7,52.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0223,223,Nirmal,Telangana,709418,0.21,DEVELOPING_URBAN,False,776,5,51.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0224,224,Bhadradri Kothagudem,Telangana,1069261,0.32,DEVELOPING_URBAN,False,1334,10,57.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0225,225,Peddapalli,Telangana,795332,0.38,DEVELOPING_URBAN,False,1059,5,36.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0226,226,Vikarabad,Telangana,927140,0.13,RURAL_LOW_DEMAND,False,910,3,22.2,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0227,227,Nagarkurnool,Telangana,893308,0.1,RURAL_LOW_DEMAND,False,839,2,21.0,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0228,228,Wanaparthy,Telangana,577758,0.16,RURAL_LOW_DEMAND,False,591,2,25.9,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0229,229,Jogulamba Gadwal,Telangana,609990,0.1,RURAL_LOW_DEMAND,False,573,1,16.2,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0230,230,Medak,Telangana,767428,0.08,RURAL_LOW_DEMAND,False,699,2,27.5,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0231,231,Rajanna Sircilla,Telangana,552037,0.21,DEVELOPING_URBAN,False,603,3,37.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0232,232,Jayashankar Bhupalpally,Telangana,416763,0.08,RURAL_LOW_DEMAND,False,380,1,16.6,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0233,233,Jangaon,Telangana,566376,0.13,RURAL_LOW_DEMAND,False,556,2,22.3,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0234,234,Mulugu,Telangana,257744,0.04,RURAL_LOW_DEMAND,False,220,1,23.5,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0235,235,Yadadri Bhuvanagiri,Telangana,739448,0.17,RURAL_LOW_DEMAND,False,767,2,17.3,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0236,236,Mahabubabad,Telangana,774549,0.1,RURAL_LOW_DEMAND,False,728,1,15.7,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0237,237,Kumuram Bheem Asifabad,Telangana,515812,0.17,RURAL_LOW_DEMAND,False,535,2,26.5,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0238,238,Narayanpet,Telangana,566874,0.12,RURAL_LOW_DEMAND,False,548,1,17.4,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0239,239,Jaipur,Rajasthan,6626178,0.52,MATURE_URBAN,False,10124,17,52.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0240,240,Jodhpur,Rajasthan,3687002,0.34,DEVELOPING_URBAN,False,4704,17,53.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0241,241,Kota,Rajasthan,1951014,0.6,TYPE_D,False,3199,17,68.4,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0242,242,Bikaner,Rajasthan,2363937,0.34,DEVELOPING_URBAN,False,3016,17,52.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0243,243,Ajmer,Rajasthan,2583052,0.4,TYPE_D,False,3512,17,70.5,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0244,244,Udaipur,Rajasthan,3068420,0.2,TYPE_A,False,3313,17,73.7,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0245,245,Bhilwara,Rajasthan,2408523,0.21,DEVELOPING_URBAN,False,2634,14,41.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0246,246,Alwar,Rajasthan,3674179,0.18,TYPE_A,False,3865,17,69.3,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0247,247,Sikar,Rajasthan,2677333,0.24,TYPE_C,False,3041,1,10.4,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0248,248,Bharatpur,Rajasthan,2548462,0.19,DEVELOPING_URBAN,False,2716,16,46.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0249,249,Pali,Rajasthan,2038533,0.23,DEVELOPING_URBAN,False,2287,16,55.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0250,250,Sri Ganganagar,Rajasthan,1969168,0.27,DEVELOPING_URBAN,False,2319,13,44.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0251,251,Jhunjhunu,Rajasthan,2137045,0.23,DEVELOPING_URBAN,False,2397,14,44.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0252,252,Hanumangarh,Rajasthan,1774692,0.2,DEVELOPING_URBAN,False,1916,14,57.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0253,253,Chittorgarh,Rajasthan,1544338,0.18,DEVELOPING_URBAN,False,1624,8,37.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0254,254,Tonk,Rajasthan,1421411,0.22,DEVELOPING_URBAN,False,1574,10,48.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0255,255,Nagaur,Rajasthan,3307743,0.19,DEVELOPING_URBAN,False,3526,17,65.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0256,256,Churu,Rajasthan,2039547,0.28,DEVELOPING_URBAN,False,2431,17,64.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0257,257,Bundi,Rajasthan,1110906,0.2,DEVELOPING_URBAN,False,1199,6,37.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0258,258,Baran,Rajasthan,1222755,0.21,DEVELOPING_URBAN,False,1337,7,41.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0259,259,Dausa,Rajasthan,1631061,0.12,DEVELOPING_URBAN,False,1578,8,43.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0260,260,Rajsamand,Rajasthan,1156597,0.16,RURAL_LOW_DEMAND,False,1184,4,27.1,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0261,261,Dungarpur,Rajasthan,1388552,0.06,RURAL_LOW_DEMAND,False,1227,4,26.3,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0262,262,Banswara,Rajasthan,1797485,0.07,DEVELOPING_URBAN,False,1614,13,61.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0263,263,Jalore,Rajasthan,1828730,0.08,DEVELOPING_URBAN,False,1667,10,46.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0264,264,Sirohi,Rajasthan,1036346,0.2,DEVELOPING_URBAN,False,1119,6,39.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0265,265,Sawai Madhopur,Rajasthan,1335551,0.2,DEVELOPING_URBAN,False,1442,11,60.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0266,266,Karauli,Rajasthan,1458248,0.15,RURAL_LOW_DEMAND,False,1472,4,23.8,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0267,267,Dholpur,Rajasthan,1206516,0.21,DEVELOPING_URBAN,False,1319,9,53.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0268,268,Jaisalmer,Rajasthan,669919,0.13,RURAL_LOW_DEMAND,False,657,2,27.8,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0269,269,Barmer,Rajasthan,2603751,0.07,TYPE_B,False,2338,17,56.3,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0270,270,Pratapgarh,Rajasthan,867848,0.08,RURAL_LOW_DEMAND,False,791,1,14.1,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0271,271,Visakhapatnam,Andhra Pradesh,2315000,0.85,TYPE_A,False,4606,17,71.3,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0272,272,Vijayawada,Andhra Pradesh,2218000,0.7,TYPE_D,False,3948,17,66.0,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0273,273,Guntur,Andhra Pradesh,2091000,0.65,TYPE_D,False,3575,17,73.3,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0274,274,Tirupati,Andhra Pradesh,2196000,0.45,TYPE_C,False,3140,1,17.4,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0275,275,Kakinada,Andhra Pradesh,2092000,0.4,DEVELOPING_URBAN,False,2845,14,39.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0276,276,Kurnool,Andhra Pradesh,2271000,0.38,DEVELOPING_URBAN,False,3024,15,38.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0277,277,Nellore,Andhra Pradesh,2469000,0.35,DEVELOPING_URBAN,False,3185,15,38.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0278,278,Kadapa,Andhra Pradesh,2060000,0.36,DEVELOPING_URBAN,False,2686,17,51.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0279,279,Anantapur,Andhra Pradesh,2241000,0.32,DEVELOPING_URBAN,False,2796,15,43.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0280,280,Eluru,Andhra Pradesh,2071000,0.28,DEVELOPING_URBAN,False,2468,17,53.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0281,281,Rajahmundry,Andhra Pradesh,1832000,0.38,DEVELOPING_URBAN,False,2440,17,56.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0282,282,Prakasam,Andhra Pradesh,2288000,0.22,DEVELOPING_URBAN,False,2535,13,41.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0283,283,Srikakulam,Andhra Pradesh,2191000,0.18,DEVELOPING_URBAN,False,2304,16,54.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0284,284,Vizianagaram,Andhra Pradesh,1930000,0.23,DEVELOPING_URBAN,False,2165,12,42.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0285,285,Chittoor,Andhra Pradesh,1872000,0.25,DEVELOPING_URBAN,False,2152,14,49.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0286,286,Nandyal,Andhra Pradesh,1781000,0.24,DEVELOPING_URBAN,False,2023,16,62.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0287,287,Krishna,Andhra Pradesh,1735000,0.26,DEVELOPING_URBAN,False,2019,15,60.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0288,288,Palnadu,Andhra Pradesh,2041000,0.25,DEVELOPING_URBAN,False,2347,11,37.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0289,289,Bapatla,Andhra Pradesh,1586000,0.21,DEVELOPING_URBAN,False,1735,10,47.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0290,290,West Godavari,Andhra Pradesh,1779000,0.26,DEVELOPING_URBAN,False,2070,11,43.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0291,291,Anakapalli,Andhra Pradesh,1726000,0.3,DEVELOPING_URBAN,False,2105,9,35.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0292,292,Sri Sathya Sai,Andhra Pradesh,1840000,0.22,DEVELOPING_URBAN,False,2038,15,58.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0293,293,Annamayya,Andhra Pradesh,1697000,0.2,DEVELOPING_URBAN,False,1832,13,54.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0294,294,Dr. B.R. Ambedkar Konaseema,Andhra Pradesh,1719000,0.15,DEVELOPING_URBAN,False,1736,9,42.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0295,295,Parvathipuram Manyam,Andhra Pradesh,925000,0.14,RURAL_LOW_DEMAND,False,921,3,24.4,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0296,296,Alluri Sitharama Raju,Andhra Pradesh,953000,0.08,TYPE_B,False,869,6,53.8,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0297,297,Indore,Madhya Pradesh,3276697,0.74,TYPE_D,False,6016,17,68.6,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0298,298,Bhopal,Madhya Pradesh,2371061,0.81,DEVELOPING_URBAN,False,4585,17,35.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0299,299,Jabalpur,Madhya Pradesh,2463289,0.58,TYPE_D,False,3970,17,61.5,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0300,300,Gwalior,Madhya Pradesh,2032036,0.63,DEVELOPING_URBAN,True,3417,17,61.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0301,301,Ujjain,Madhya Pradesh,1986864,0.39,TYPE_A,False,2674,17,73.1,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0302,302,Sagar,Madhya Pradesh,2378458,0.3,DEVELOPING_URBAN,False,2901,17,51.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0303,303,Dewas,Madhya Pradesh,1563715,0.29,TYPE_C,False,1885,1,16.3,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0304,304,Satna,Madhya Pradesh,2228935,0.21,DEVELOPING_URBAN,False,2438,16,52.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0305,305,Ratlam,Madhya Pradesh,1455069,0.3,DEVELOPING_URBAN,False,1775,9,39.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0306,306,Rewa,Madhya Pradesh,2365106,0.17,DEVELOPING_URBAN,False,2454,12,38.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0307,307,Singrauli,Madhya Pradesh,1178272,0.19,RURAL_LOW_DEMAND,False,1256,3,18.3,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0308,308,Katni,Madhya Pradesh,1292042,0.21,DEVELOPING_URBAN,False,1413,11,62.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0309,309,Khandwa,Madhya Pradesh,1310061,0.2,DEVELOPING_URBAN,False,1414,10,58.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0310,310,Morena,Madhya Pradesh,1965970,0.24,DEVELOPING_URBAN,True,2233,17,60.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0311,311,Bhind,Madhya Pradesh,1703005,0.25,DEVELOPING_URBAN,True,1958,15,62.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0312,312,Chhindwara,Madhya Pradesh,2090922,0.24,DEVELOPING_URBAN,False,2375,13,41.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0313,313,Guna,Madhya Pradesh,1241519,0.25,DEVELOPING_URBAN,True,1427,8,42.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0314,314,Shivpuri,Madhya Pradesh,1726050,0.17,DEVELOPING_URBAN,True,1791,9,38.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0315,315,Vidisha,Madhya Pradesh,1458875,0.23,DEVELOPING_URBAN,False,1636,12,58.4,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0316,316,Damoh,Madhya Pradesh,1264219,0.2,DEVELOPING_URBAN,False,1365,10,61.5,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0317,317,Mandsaur,Madhya Pradesh,1340411,0.21,DEVELOPING_URBAN,False,1466,9,47.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0318,318,Khargone,Madhya Pradesh,1874309,0.16,DEVELOPING_URBAN,False,1919,13,53.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0319,319,Neemuch,Madhya Pradesh,826067,0.3,DEVELOPING_URBAN,False,1007,5,39.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0320,320,Narmadapuram,Madhya Pradesh,1241350,0.31,DEVELOPING_URBAN,False,1531,12,62.9,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0321,321,Panna,Madhya Pradesh,1016520,0.13,TYPE_B,False,998,8,61.6,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
+DST_0322,322,Sehore,Madhya Pradesh,1311332,0.19,RURAL_LOW_DEMAND,False,1397,5,27.7,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0323,323,Betul,Madhya Pradesh,1575362,0.2,DEVELOPING_URBAN,False,1701,13,59.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0324,324,Seoni,Madhya Pradesh,1379131,0.12,RURAL_LOW_DEMAND,False,1334,4,26.3,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0325,325,Datia,Madhya Pradesh,786725,0.23,DEVELOPING_URBAN,False,882,4,35.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0326,326,Dhar,Madhya Pradesh,2185793,0.19,DEVELOPING_URBAN,False,2330,17,57.1,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0327,327,Thiruvananthapuram,Kerala,3301427,0.54,MATURE_URBAN,False,5137,17,45.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0328,328,Ernakulam,Kerala,3282388,0.68,TYPE_C,False,5750,1,17.3,"PANEL BLINDNESS (MEASUREMENT ILLUSION): Healthy true sales, but panel coverage <20%. Not a whitespace, already active.",FIX_PANEL_MEASUREMENT_DO_NOT_MISCLASSIFY
+DST_0329,329,Kozhikode,Kerala,3086293,0.67,TYPE_A,False,5363,17,71.0,"REAL WHITESPACE (WINNER): High category velocity, strong audience buzz, low Kestrel distribution (2-8%). Prime expansion target.",EXPAND_DISTRIBUTION_IMMEDIATELY
+DST_0330,330,Thrissur,Kerala,3121200,0.67,TYPE_D,False,5424,17,77.3,"COMPETITIVE LOCKOUT (HARD MOAT): Strong category demand, reasonable Kestrel dist, but 2 rivals hold >85% share with exclusive chillers.",HIGH_COST_BARRIER_ACQUIRE_CHILLER_CONTRACTS
+DST_0331,331,Kollam,Kerala,2635375,0.45,MATURE_URBAN,False,3768,17,59.3,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0332,332,Kannur,Kerala,2523003,0.65,MATURE_URBAN,False,4314,17,43.0,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0333,333,Palakkad,Kerala,2809934,0.24,DEVELOPING_URBAN,False,3192,17,58.6,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0334,334,Alappuzha,Kerala,2127789,0.54,DEVELOPING_URBAN,False,3310,16,38.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0335,335,Kottayam,Kerala,1974551,0.29,DEVELOPING_URBAN,False,2381,17,61.2,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0336,336,Malappuram,Kerala,4112920,0.44,MATURE_URBAN,False,5823,17,60.8,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0337,337,Kasaragod,Kerala,1307375,0.39,DEVELOPING_URBAN,False,1759,9,41.7,DEVELOPING URBAN / TIER 2-3: Standard competitive balance and organic growth.,MAINTAIN_ORGANIC_GROWTH
+DST_0338,338,Pathanamthitta,Kerala,1197412,0.11,RURAL_LOW_DEMAND,False,1142,4,25.4,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0339,339,Idukki,Kerala,1108974,0.05,RURAL_LOW_DEMAND,False,964,2,20.4,"RURAL LOW DEMAND: Low population, low income, low category consumption.",SELECTIVE_HIGHWAY_OUTLETS_ONLY
+DST_0340,340,Wayanad,Kerala,817420,0.04,TYPE_B,False,699,4,47.6,"DISTRIBUTION FAILURE (TRAP): High Kestrel listing, but zero category demand. Marketing will NOT fix this.",AVOID_DO_NOT_INVEST_MARKETING
