@@ -4,3 +4,10 @@ __pycache__/
 # Large raw datasets
 data/raw/retail_panel.csv
 data/raw/audience_signal.jsonl
+
+# Processed datasets
+data/processed/*.csv
+
+# Large raw datasets
+data/raw/retail_panel.csv
+data/raw/audience_signal.jsonl

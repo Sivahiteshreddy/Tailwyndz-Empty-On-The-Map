@@ -1,0 +1,8 @@
+Dataset,Rows,Columns,Duplicate Rows,Missing Cells,Missing %
+Retail Panel,1428039,21,27746,1607880,5.36
+Competitor,41616,12,816,27939,5.59
+Kestrel,49939,13,979,0,0.0
+Audience,393815,19,7645,59816,0.8
+District Master,340,9,0,333,10.88
+Panel Coverage,8160,8,0,0,0.0
+Distribution,8160,9,0,0,0.0
