@@ -1,0 +1,6 @@
+district_name,demand_signal_score,distribution_gap_score,competition_score,competition_opportunity,wci_score,demand_signal_score_dup,distribution_gap_score_dup2,recommendation,avg_price,category_units,estimated_revenue_opportunity
+kota,58.34,66.8,57.48,42.52,58.14,58.34,66.8,Distribution Priority,138.23293451899758,975415,90069431.18633048
+indore,53.52,66.84,58.59,41.41,55.76,53.52,66.84,Distribution Priority,139.83423170361374,881464,82386209.46770108
+surat,43.05,68.12,59.04,40.96,51.41,43.05,68.12,Marketing + Distribution,140.1726004464286,839606,80170262.03953291
+coimbatore,57.52,67.9,60.08,39.92,57.63,57.52,67.9,Distribution Priority,139.5384913989953,796932,75506625.84972963
+meerut,53.8,66.08,56.93,43.07,55.95,53.8,66.08,Distribution Priority,140.04136343046957,724285,67024850.769206636
