@@ -1,0 +1,19 @@
+check,dataset,metric,value,finding
+District ID,retail_panel,Normalized match %,100.0,All district IDs matched after normalization
+District ID,distribution,Normalized match %,100.0,All district IDs matched after normalization
+District ID,competitor,Normalized match %,100.0,All district IDs matched after normalization
+District ID,audience,Normalized match %,100.0,All district IDs matched after normalization
+District ID,kestrel sales,Normalized match %,100.0,All district IDs matched after normalization
+District ID,district_master,Normalized match %,100.0,All district IDs matched after normalization
+District ID,panel_coverage,Normalized match %,100.0,All district IDs matched after normalization
+District + Month,retail_panel,Match % vs retail panel,100.0,All district-month combinations matched
+District + Month,distribution,Match % vs retail panel,100.0,All district-month combinations matched
+District + Month,competitor,Match % vs retail panel,100.0,All district-month combinations matched
+District + Month,audience,Match % vs retail panel,100.0,All district-month combinations matched
+District + Month,kestrel,Match % vs retail panel,100.0,All district-month combinations matched
+District + Month,panel_coverage,Match % vs retail panel,100.0,All district-month combinations matched
+SKU,retail_panel,Match % vs retail panel,100.0,Reference dataset
+SKU,kestrel,Match % vs retail panel,20.69,All Kestrel SKUs matched to retail panel
+Panel Coverage,panel_coverage,District-months below 60%,6314.0,Low coverage requires caution before using panel data
+Panel Coverage,panel_coverage,Districts below 60% mean coverage,257.0,District must not be treated as zero demand
+Panel Coverage,panel_coverage,Districts at/above 60% mean coverage,83.0,Eligible for panel-based analysis subject to other checks
