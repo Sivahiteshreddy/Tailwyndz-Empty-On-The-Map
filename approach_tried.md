@@ -1,21 +1,37 @@
 # Approach Tried
 
-This file records the methods I considered during the Tailwyndz "Empty On The Map" project and why I did not use them.
+This file records approaches considered or tested during the Tailwyndz "Empty On The Map" project and why they were not used in the final analysis.
 
-## Approach 1 – Rank districts using raw data
+## Approach 1 – Rank districts using raw sales
 
-I first thought of ranking districts directly from the raw datasets.
+I initially considered ranking districts directly using observed Kestrel sales from the raw data.
 
-**Why I did not use it:** The raw data had different district names, mixed date formats, and panel coverage issues. The ranking would not be reliable.
+**Why I did not use it:** This would treat observed panel sales as directly comparable across districts even though panel coverage is highly uneven. The panel-coverage audit found that 6,314 of 8,160 district-month observations (77.4%) are below the 60% coverage threshold. Therefore, a low observed sales value may reflect limited panel coverage rather than weak demand.
 
-## Approach 2 – Use raw dates for monthly analysis
+**Decision:** Dropped. Sales must be interpreted together with panel coverage and market-size information.
 
-I tried using the original date values for monthly analysis.
+---
 
-**Why I did not use it:** The datasets had different date formats, so the monthly comparison was not consistent.
+## Approach 2 – Use raw date values for monthly analysis
 
-## Approach 3 – Join datasets using original district names
+I initially considered using the original date fields directly to create monthly analysis.
 
-I tried joining the datasets using the original district names.
+**Why I did not use it:** The date audit identified mixed and partially unparseable date values. Approximately 92% of records successfully parsed across the audited date fields, leaving a material proportion requiring controlled handling. The Retail Panel also contains future-dated records extending to 2031-11-28.
 
-**Why I did not use it:** Different spellings of district names caused failed joins, so I standardized the district names before merging the datasets.
+**Decision:** Dropped. Dates must be parsed and validated during preprocessing before monthly aggregation.
+
+---
+
+## Approach 3 – Join datasets using original district identifiers/names
+
+I initially considered joining datasets using the original district identifiers and names without normalization.
+
+**Why I did not use it:** District identifiers were represented in different formats, including values such as `DST_0001`, `DST-0001`, and numeric representations. Exact matching therefore produced apparent mismatches. After non-destructive normalization, the datasets aligned to the same 340 districts.
+
+**Decision:** Dropped. District identifiers must be standardized in a controlled working representation before cross-dataset joins.
+
+---
+
+## Final Approach
+
+The final analysis will use controlled preprocessing and normalized join keys while preserving the raw datasets. Panel coverage will be evaluated before interpreting sales, and market size and other demand/distribution signals will be incorporated before identifying whitespace opportunities.
