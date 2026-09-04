@@ -1,239 +1,284 @@
 # Assumptions
 
-This file records the assumptions used during the Tailwyndz "Empty On The Map" project and the potential impact if those assumptions are incorrect.
-
-## Current Assumptions
-
-### 1. Raw datasets remain unchanged
-
-**Assumption:** Raw datasets are treated as immutable source data throughout the project.
-
-**Why:** This preserves traceability and allows all preprocessing decisions to be reproduced.
-
-**What breaks if wrong:** If raw data is overwritten, it becomes difficult to reproduce or audit preprocessing decisions.
+This document records the assumptions used in the Tailwyndz "Empty On The Map" analysis and what could happen if each assumption is incorrect.
 
 ---
 
-### 2. Cleaning is performed on working copies
+## 1. Raw datasets are immutable
 
-**Assumption:** Data cleaning, normalization, and transformation are performed on working representations rather than modifying raw files.
+**Assumption:** Raw source datasets remain unchanged throughout the project.
 
-**Why:** Phase 1 is an audit of the raw data; cleaning belongs to the preprocessing phase.
+**Why:** This preserves traceability and reproducibility.
 
-**What breaks if wrong:** Raw-data lineage and reproducibility would be compromised.
-
----
-
-### 3. District identifiers can be normalized safely
-
-**Assumption:** Different district-ID representations refer to the same underlying districts when their normalized identifiers match.
-
-**Evidence:** Original representations include formats such as `DST_0001`, `DST-0001`, and numeric IDs. After controlled normalization, the datasets align to 340 districts.
-
-**What breaks if wrong:** Incorrect normalization could create false joins or combine different districts, which would distort district-level analysis.
+**What breaks if wrong:** Preprocessing decisions cannot be reliably audited or reproduced.
 
 ---
 
-### 4. District-month is the primary analytical grain
+## 2. Cleaning is performed on working copies
+
+**Assumption:** Cleaning and transformations are applied to working/processed datasets rather than raw files.
+
+**Why:** Raw-data audit and analytical preparation need to remain separate.
+
+**What breaks if wrong:** Data lineage and reproducibility become difficult to establish.
+
+---
+
+## 3. District identifiers can be safely normalized
+
+**Assumption:** Different representations such as `DST_0001`, `DST-0001`, and numeric IDs can be mapped to the same canonical district when their normalized identifiers agree.
+
+**Evidence:** After normalization, the analytical datasets align to the same 340 District Master districts.
+
+**What breaks if wrong:** Incorrect normalization could create false joins or combine different districts.
+
+---
+
+## 4. District-month is the common analytical grain
 
 **Assumption:** District-month is an appropriate common grain for combining the major analytical datasets.
 
-**Evidence:** The relationship audit identified 8,160 aligned district-month combinations across the analytical datasets.
+**Evidence:** The datasets align to 340 districts × 24 months = 8,160 district-month combinations.
 
-**What breaks if wrong:** Incorrect temporal or geographic aggregation could create duplicated observations or misleading district-level metrics.
-
----
-
-### 5. Date fields require controlled parsing and validation
-
-**Assumption:** Mixed date representations can be converted into a common datetime representation during preprocessing.
-
-**Evidence:** Approximately 92% of records successfully parsed across the audited date fields, while a material proportion contained unparseable values. The Retail Panel also contains future-dated records extending to 2031-11-28.
-
-**What breaks if wrong:** Invalid or future dates could distort monthly aggregation, trends, and historical comparisons.
+**What breaks if wrong:** Incorrect aggregation could create duplication or misleading district-level metrics.
 
 ---
 
-### 6. Panel data represents a sample, not a complete market census
+## 5. Panel data is a sample rather than a complete census
 
-**Assumption:** Observed panel sales should not automatically be treated as the complete district market.
+**Assumption:** Panel observations should not automatically be treated as the complete retail market.
 
-**Evidence:** 6,314 of 8,160 district-month observations (77.4%) have panel coverage below 60%. At the district level, 257 of 340 districts have mean panel coverage below 60%.
+**Evidence:** 6,314 of 8,160 district-month observations (77.4%) are below the 60% panel-coverage threshold.
 
-**What breaks if wrong:** Treating low panel sales as zero demand could incorrectly classify districts as whitespace opportunities.
-
----
-
-### 7. Low panel coverage represents uncertainty, not zero demand
-
-**Assumption:** Districts below the required panel-coverage threshold should not be interpreted as having zero demand.
-
-**Why:** Poor panel coverage can make actual sales appear artificially low.
-
-**What breaks if wrong:** The WCI ranking could prioritize data gaps instead of genuine commercial opportunities.
+**What breaks if wrong:** Low observed sales could be incorrectly interpreted as weak market demand.
 
 ---
 
-### 8. Exact duplicate rows require investigation before removal
+## 6. Panel coverage below 60% means UNKNOWN
 
-**Assumption:** Exact duplicate rows are not automatically treated as errors during Phase 1.
+**Assumption:** Districts below 60% panel coverage have insufficient evidence for reliable whitespace interpretation.
 
-**Evidence:** Exact duplicates were identified in several datasets, including 27,746 in the Retail Panel, 7,645 in Audience, 979 in Kestrel Sales, and 816 in Competitor.
+**Treatment:** These districts are classified as UNKNOWN rather than zero-demand or rejected markets.
 
-**What breaks if wrong:** Automatically deleting duplicates could remove legitimate repeated observations or distort volume-based measures.
+**Evidence:** 257 of 340 districts have mean panel coverage below 60%.
 
----
-
-### 9. Kestrel sales are excluded from the independent demand signal
-
-**Assumption:** The demand signal should represent category demand independently of Kestrel's own sales.
-
-**Why:** Including Kestrel sales would make the demand signal circular and could make Kestrel's existing presence appear as evidence of external demand.
-
-**What breaks if wrong:** The WCI could overstate opportunity in districts where Kestrel already has meaningful sales.
+**What breaks if wrong:** The analysis could mistake data blindness for genuine whitespace.
 
 ---
 
-### 10. New assumptions will be documented
+## 7. Dates can be standardized during preprocessing
 
-Any additional assumptions introduced during preprocessing, WCI construction, or opportunity sizing will be added to this file together with their potential impact.
+**Assumption:** Mixed source date representations can be converted into a common datetime representation.
 
----
+**Treatment:** Date fields are parsed and validated during preprocessing.
 
-### 11. Near-duplicate records require stronger evidence before removal
-
-**Assumption:** Repeated business keys alone are not sufficient evidence that records are duplicates.
-
-**Evidence:** A timestamp-proximity audit was performed using business identity keys and a 10-second threshold. No confirmed true near-duplicate pairs were found.
-
-**What breaks if wrong:** Removing legitimate repeated events could distort event counts, sales measures, or engagement measures.
+**What breaks if wrong:** Incorrect dates could distort monthly aggregation and time-based analysis.
 
 ---
 
-### 12. Invalid numeric values are handled explicitly
+## 8. Exact duplicates require investigation
 
-**Assumption:** Values that violate known business/data constraints are treated as invalid and handled during preprocessing.
+**Assumption:** Exact duplicate rows should be investigated before removal rather than automatically assumed to be errors.
 
-**Evidence:** Negative Retail Panel unit prices and impossible Audience ages (<5 or >110) were converted to missing values. No invalid negative prices or invalid ages remained after validation.
+**Why:** Some repeated records can represent legitimate observations.
 
-**What breaks if wrong:** Impossible values could distort averages, ratios, distributions, and downstream WCI components.
+**What breaks if wrong:** Removing legitimate records could distort volume, revenue, or engagement measures.
 
 ---
 
-### 13. Missing discount values are not automatically interpreted as zero
+## 9. Near-duplicate business keys are not automatically errors
+
+**Assumption:** Repeated business keys alone do not prove that observations are duplicates.
+
+**Treatment:** Near-duplicate logic requires additional evidence such as timestamp proximity and business identity.
+
+**What breaks if wrong:** Legitimate repeated events or transactions could be removed.
+
+---
+
+## 10. Invalid numeric values require explicit handling
+
+**Assumption:** Values that violate known business constraints are treated as invalid during preprocessing.
+
+**Examples:** Negative retail unit prices and impossible audience ages.
+
+**What breaks if wrong:** Invalid values could distort averages, ratios, and downstream scores.
+
+---
+
+## 11. Missing discounts do not equal zero
 
 **Assumption:** A missing discount value does not prove that no discount existed.
 
-**Treatment:** Missing discount values are retained as missing unless a later analysis requires an explicitly justified treatment.
+**Treatment:** Missing discount values are retained as missing unless a justified analytical treatment is established.
 
-**What breaks if wrong:** Converting missing discounts to 0% could bias price and discount analysis.
-
----
-
-### 14. Missing projection weights are not arbitrarily imputed
-
-**Assumption:** Missing projection weights should not be filled with arbitrary values before the appropriate weighting methodology is established.
-
-**Treatment:** Missing weights are retained for explicit handling in the relevant analysis.
-
-**What breaks if wrong:** Arbitrary imputation could distort projected audience or demand estimates.
+**What breaks if wrong:** Treating all missing discounts as zero could bias pricing analysis.
 
 ---
 
-### 15. District Master is the reference for district standardization
+## 12. Missing projection weights are not arbitrarily imputed
 
-**Assumption:** District IDs and district names are standardized against the District Master before cross-dataset joins.
+**Assumption:** Missing projection weights should not be filled with arbitrary values.
 
-**Evidence:** Retail Panel, Competitor, Audience, and Kestrel each resolve to 340 normalized districts with standardized district names.
+**Why:** The correct weighting methodology must be justified before imputation.
 
-**What breaks if wrong:** Incorrect district mapping could transfer sales, demand, competition, or coverage information between districts.
-
----
-
-### 16. Join keys must be validated before WCI construction
-
-**Assumption:** WCI calculations should only begin after the relevant district, month, and analytical join keys have been validated.
-
-**Evidence:** Audience ↔ Retail Panel, Competitor ↔ Retail Panel, Kestrel ↔ Competitor, and Panel Coverage ↔ Retail Panel achieved 100% district-month match rates after normalization.
-
-**What breaks if wrong:** Misaligned joins could duplicate observations or assign information to the wrong district/month.
+**What breaks if wrong:** Audience or demand estimates could be systematically distorted.
 
 ---
 
-### 17. Kestrel District × SKU × Month coverage is not assumed to be complete
+## 13. District Master is the geographic reference
 
-**Assumption:** Unmatched Kestrel District × SKU × Month combinations are treated as a documented join-coverage issue rather than automatically interpreted as zero sales or deleted.
+**Assumption:** District Master provides the canonical district identifier and standardized district name/state information.
 
-**Evidence:** 40,348 of 48,960 unique Kestrel District × SKU × Month keys matched Retail Panel, giving an 82.41% match rate.
+**Why:** It provides a consistent geographic reference for joins and reporting.
 
-**What breaks if wrong:** Treating unmatched combinations as zero could create artificial distribution gaps or distort Kestrel-related analysis.
-
----
-
-### 18. Kestrel sales are excluded from the independent demand signal
-
-**Assumption:** Kestrel's own sales are not used to construct the WCI demand signal.
-
-**Why:** Including Kestrel sales would make the demand signal circular and could make existing Kestrel presence appear as evidence of external demand.
-
-**What breaks if wrong:** The WCI could overstate opportunity in districts where Kestrel already has meaningful sales.
+**What breaks if wrong:** Sales, demand, competition, or coverage information could be assigned to the wrong district.
 
 ---
 
-### 19. Demand signal uses independent demand evidence
+## 14. Joins must be validated before WCI construction
 
-**Assumption:** The WCI demand signal uses the assessment-defined independent sources: category velocity, content/social engagement, and event registrations.
+**Assumption:** Analytical joins are valid only after district and district-month key validation.
 
-**What breaks if wrong:** Using Kestrel sales or another non-independent signal could introduce circularity into the opportunity score.
+**Evidence:** After normalization, the relevant district and district-month relationships were validated across the analytical datasets.
 
----
-
-### 20. Low panel coverage is treated as uncertainty
-
-**Assumption:** Districts with panel coverage below 60% are treated as UNKNOWN rather than as confirmed whitespace opportunities.
-
-**Why:** Low panel coverage can make observed activity appear artificially weak.
-
-**What breaks if wrong:** WCI could prioritize data gaps instead of genuine commercial opportunities.
+**What breaks if wrong:** Incorrect joins could duplicate observations or assign information to the wrong market.
 
 ---
 
-### 21. WCI formula and thresholds follow the assessment
+## 15. Kestrel sales are excluded from the independent Demand Signal
 
-**Assumption:** The prescribed WCI weights and recommendation thresholds are used without changing them.
+**Assumption:** Kestrel's own sales are not used to construct Demand Signal.
 
-**Treatment:** Recommended targets require WCI ≥ 0.70, Distribution Gap ≥ 0.40, and Panel Coverage ≥ 60%.
+**Why:** The assessment requires independent demand evidence.
 
-**What breaks if wrong:** Changing the weights or thresholds would make the analysis inconsistent with the assessment specification.
-
----
-
-### 22. Market-size normalization is required
-
-**Assumption:** Opportunity measures are normalized for market size rather than relying only on absolute volume.
-
-**Why:** Larger districts naturally generate more absolute activity; normalization helps identify genuine whitespace rather than simply the largest markets.
-
-**What breaks if wrong:** The shortlist could be dominated by large districts even when their relative whitespace is weak.
+**What breaks if wrong:** The WCI could become circular and overstate opportunity where Kestrel already performs well.
 
 ---
 
-### 23. Distribution quality issues are explicitly flagged
+## 16. Demand Signal represents independent demand evidence
 
-**Assumption:** Impossible distribution values are identified and documented before WCI interpretation.
+**Assumption:** Demand Signal uses independent category/audience/event evidence rather than Kestrel's own sales.
 
-**Evidence:** The Distribution audit identified 159 rows with at least one impossible condition, while the percentage consistency checks showed zero calculation mismatches.
+**Why:** This separates underlying market demand from Kestrel's existing commercial performance.
 
-**Treatment:** These issues remain explicitly documented for WCI analysis rather than being silently treated as valid business observations.
-
-**What breaks if wrong:** Invalid outlet counts could distort distribution-gap calculations.
+**What breaks if wrong:** Existing Kestrel presence could be mistaken for external market demand.
 
 ---
 
-### 24. Processed datasets are separate from WCI outputs
+## 17. Distribution Gap measures relative whitespace
 
-**Assumption:** Validated processed datasets form a stable preprocessing layer, while WCI calculations and opportunity outputs are created separately.
+**Assumption:** Distribution Gap is interpreted as the gap between Kestrel distribution and category distribution.
 
-**Why:** This preserves a clear boundary between data preparation and analytical results.
+**Formula:**
 
-**What breaks if wrong:** Analytical transformations could overwrite the validated input layer and make the analysis difficult to reproduce.
+`Distribution Gap = 1 − (Kestrel stocking outlets / Category stocking outlets)`
+
+**What breaks if wrong:** Distribution opportunity could be overstated or understated.
+
+---
+
+## 18. Competitive Intensity reflects the top two rivals
+
+**Assumption:** Competitive Intensity represents the share of category volume held by the top two competitors.
+
+**Why:** This follows the assessment definition.
+
+**What breaks if wrong:** Markets with strong competitive lockout could be incorrectly interpreted as open whitespace.
+
+---
+
+## 19. WCI weights and recommendation thresholds follow the assessment
+
+**Assumption:** The prescribed WCI formula and recommendation thresholds are used without changing them.
+
+**Formula:**
+
+`WCI = 0.45 × Demand Signal + 0.35 × Distribution Gap + 0.20 × (1 − Competitive Intensity)`
+
+**Recommended Target conditions:**
+
+- WCI ≥ 0.70
+- Distribution Gap ≥ 0.40
+- Panel Coverage ≥ 60%
+
+**What breaks if wrong:** Changing the weights or thresholds would make the analysis inconsistent with the assessment.
+
+---
+
+## 20. Market-size normalization is necessary
+
+**Assumption:** Demand/opportunity interpretation must account for market size rather than relying only on absolute volume.
+
+**Why:** Large districts naturally generate larger absolute activity.
+
+**What breaks if wrong:** The shortlist could become dominated by the largest districts rather than genuine whitespace.
+
+---
+
+## 21. Kestrel revenue is used for commercial sizing, not independent demand
+
+**Assumption:** Kestrel revenue may be used separately for commercial opportunity sizing and context, while remaining excluded from Demand Signal.
+
+**Why:** Existing Kestrel performance is useful for quantifying commercial scale but should not contaminate the independent demand measure.
+
+**What breaks if wrong:** Mixing these purposes could introduce circularity into the WCI.
+
+---
+
+## 22. Top-five ₹ sizing is a commercial estimate
+
+**Assumption:** The top-five ₹ figure is presented as a commercial sizing/baseline and not as a guaranteed incremental revenue forecast unless an explicit uplift methodology is justified.
+
+**Why:** The assessment requires ₹ sizing but does not prescribe a single incremental-revenue formula.
+
+**What breaks if wrong:** Presenting baseline revenue as guaranteed incremental opportunity would overstate the business case.
+
+---
+
+## 23. Intervention recommendations are diagnostic
+
+**Assumption:** Distribution, Marketing, or Both recommendations are based on the observed Demand Signal and Distribution Gap.
+
+**Interpretation:**
+- Strong demand + large distribution gap → Both
+- Large distribution gap without strong demand → Distribution
+- Strong demand without large distribution gap → Marketing
+
+**What breaks if wrong:** The intervention could address the wrong commercial constraint.
+
+---
+
+## 24. Pale districts are not automatically rejected because of low sales alone
+
+**Assumption:** A pale district should be rejected only when the available evidence indicates insufficient whitespace opportunity, rather than simply because its Kestrel sales are low.
+
+**Why:** Low sales can result from weak demand, poor distribution, competition, or insufficient evidence.
+
+**What breaks if wrong:** Genuine whitespace could be incorrectly rejected.
+
+---
+
+## 25. UNKNOWN districts are not rejection markets
+
+**Assumption:** Districts below 60% panel coverage remain UNKNOWN rather than being labelled poor or rejected.
+
+**Why:** Insufficient evidence is different from evidence of weak opportunity.
+
+**What breaks if wrong:** Data gaps could be mistaken for weak commercial potential.
+
+---
+
+## 26. Processed datasets and analytical outputs remain separate
+
+**Assumption:** Processed datasets provide the stable analytical input layer, while WCI and recommendation outputs are generated separately.
+
+**Why:** This preserves reproducibility and makes the analytical pipeline easier to audit.
+
+**What breaks if wrong:** Analytical transformations could overwrite the validated input layer.
+
+---
+
+## 27. Additional assumptions must be documented
+
+Any new assumption introduced during opportunity sizing, recommendation classification, memo preparation, or presentation development will be added here with its potential impact.

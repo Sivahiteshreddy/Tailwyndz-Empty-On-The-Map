@@ -1,91 +1,125 @@
 # Approach Tried
 
-This file records approaches considered or tested during the Tailwyndz "Empty On The Map" project and why they were not used in the final analysis.
-
-## Approach 1 – Rank districts using raw sales
-
-I initially considered ranking districts directly using observed Kestrel sales from the raw data.
-
-**Why I did not use it:** This would treat observed panel sales as directly comparable across districts even though panel coverage is highly uneven. The panel-coverage audit found that 6,314 of 8,160 district-month observations (77.4%) are below the 60% coverage threshold. Therefore, a low observed sales value may reflect limited panel coverage rather than weak demand.
-
-**Decision:** Dropped. Sales must be interpreted together with panel coverage and market-size information.
+This document records analytical approaches considered during the Tailwyndz "Empty On The Map" project and explains why the final approach was selected.
 
 ---
 
-## Approach 2 – Use raw date values for monthly analysis
+## 1. Rank districts using raw Kestrel sales
 
-I initially considered using the original date fields directly to create monthly analysis.
+**Approach considered:** Rank districts directly using observed Kestrel sales.
 
-**Why I did not use it:** The date audit identified mixed and partially unparseable date values. Approximately 92% of records successfully parsed across the audited date fields, leaving a material proportion requiring controlled handling. The Retail Panel also contains future-dated records extending to 2031-11-28.
+**Why rejected:** Observed sales are affected by uneven panel coverage. The panel-coverage analysis found 6,314 of 8,160 district-month observations (77.4%) below the 60% coverage threshold. Low observed sales therefore cannot automatically be interpreted as weak demand.
 
-**Decision:** Dropped. Dates must be parsed and validated during preprocessing before monthly aggregation.
-
----
-
-## Approach 3 – Join datasets using original district identifiers/names
-
-I initially considered joining datasets using the original district identifiers and names without normalization.
-
-**Why I did not use it:** District identifiers were represented in different formats, including values such as `DST_0001`, `DST-0001`, and numeric representations. Exact matching therefore produced apparent mismatches. After non-destructive normalization, the datasets aligned to the same 340 districts.
-
-**Decision:** Dropped. District identifiers must be standardized in a controlled working representation before cross-dataset joins.
+**Decision:** Rejected. Kestrel sales are used for commercial context and opportunity sizing, but not as the independent demand signal.
 
 ---
 
-## Final Approach
+## 2. Treat low panel coverage as zero demand
 
-The final analysis will use controlled preprocessing and normalized join keys while preserving the raw datasets. Panel coverage will be evaluated before interpreting sales, and market size and other demand/distribution signals will be incorporated before identifying whitespace opportunities.
+**Approach considered:** Interpret districts with low panel coverage as low- or zero-demand markets.
 
-## Approach 4 – Treat missing discount as zero
+**Why rejected:** A weak panel can make observed activity appear artificially low. The assessment requires districts below 60% panel coverage to be classified as UNKNOWN.
 
-I considered treating missing discount values as 0%.
+**Decision:** Rejected. Low coverage represents insufficient evidence, not zero demand.
 
-**Why I did not use it:** A missing discount does not prove that no discount existed. The missing values are therefore retained as missing.
+---
 
-## Approach 5 – Impute missing projection weights immediately
+## 3. Join datasets using original district identifiers
 
-I considered filling missing projection weights before analysis.
+**Approach considered:** Join datasets using district IDs exactly as supplied.
 
-**Why I did not use it:** The appropriate weighting methodology had not yet been established, so arbitrary imputation could distort the analysis.
+**Why rejected:** District identifiers were represented inconsistently, including formats such as `DST_0001`, `DST-0001`, and numeric representations.
 
-## Approach 6 – Remove all near-duplicate business keys
+**Decision:** Rejected. District identifiers were normalized to a canonical representation before cross-dataset joins.
 
-I considered removing every repeated District/SKU/Month or District/User/Event combination.
+---
 
-**Why I did not use it:** Repeated business keys can represent legitimate repeated observations. Timestamp proximity was therefore investigated separately, and no confirmed true near-duplicate pairs were found.
+## 4. Use Kestrel sales in the independent Demand Signal
 
-## Approach 7 – Join datasets using original district IDs
+**Approach considered:** Include Kestrel sales as an input to the demand score.
 
-I considered joining datasets using the IDs exactly as originally stored.
+**Why rejected:** The assessment requires an independent demand signal. Including Kestrel's own sales would introduce circularity because existing Kestrel performance would become evidence of external demand.
 
-**Why I did not use it:** District identifiers were represented inconsistently across datasets. IDs were normalized before joining.
+**Decision:** Rejected. The Demand Signal is based on independent category/audience/event evidence.
 
-## Approach 8 – Treat unmatched Kestrel keys as missing sales
+---
 
-I considered treating Kestrel combinations that do not match Retail Panel as zero or missing sales.
+## 5. Rank districts by absolute category volume
 
-**Why I did not use it:** The unmatched Kestrel combinations represent a join-coverage issue, not proof of zero sales. The 82.41% match rate is therefore retained as a documented limitation.
+**Approach considered:** Rank districts using absolute category volume.
 
-## Approach 9 – Use Kestrel sales as part of the demand signal
+**Why rejected:** Large districts naturally generate larger absolute volumes. This would favor market size rather than identifying genuine relative whitespace.
 
-I considered using Kestrel's own sales history as an indicator of demand.
+**Decision:** Rejected. Market-size normalization is required so the ranking reflects whitespace rather than simply the largest markets.
 
-**Why I did not use it:** The assessment explicitly requires the demand signal to be independent of Kestrel's own sales.
+---
 
-## Approach 10 – Rank districts by absolute sales/volume
+## 6. Treat missing discounts as zero
 
-I considered ranking districts directly by absolute volume.
+**Approach considered:** Convert missing discount values to 0%.
 
-**Why I did not use it:** This would favor large markets and would not distinguish market size from genuine whitespace opportunity. The assessment requires normalization for market size.
+**Why rejected:** A missing value does not prove that no discount existed.
 
-## Approach 11 – Treat low panel coverage as zero demand
+**Decision:** Rejected. Missing discounts remain missing unless a later analysis provides a justified treatment.
 
-I considered treating districts with weak panel coverage as having weak or zero demand.
+---
 
-**Why I did not use it:** Panel gaps can look like zero demand. Districts below 60% panel coverage must therefore be reported as UNKNOWN.
+## 7. Impute missing projection weights immediately
 
-## Approach 12 – Calculate WCI before validating joins and panel coverage
+**Approach considered:** Fill missing projection weights before analysis.
 
-I considered beginning WCI calculations immediately after basic cleaning.
+**Why rejected:** An appropriate weighting methodology had not been established. Arbitrary imputation could distort projected audience or demand measures.
 
-**Why I did not use it:** WCI depends on correctly aligned district/month data and reliable panel coverage. Join-key validation and panel-coverage validation were completed first.
+**Decision:** Rejected. Missing weights are retained for explicit handling where required.
+
+---
+
+## 8. Remove every repeated business key
+
+**Approach considered:** Remove all repeated District/SKU/Month or District/User/Event combinations.
+
+**Why rejected:** Repeated business keys can represent legitimate repeated observations. Business-key repetition alone is insufficient evidence of duplication.
+
+**Decision:** Rejected. Exact duplicates and near-duplicates were investigated separately.
+
+---
+
+## 9. Calculate WCI before validating coverage and joins
+
+**Approach considered:** Begin WCI calculations immediately after basic preprocessing.
+
+**Why rejected:** WCI depends on correctly aligned district/month data and reliable panel evidence.
+
+**Decision:** Rejected. District/month joins and panel coverage were validated before WCI construction.
+
+---
+
+# Final Approach
+
+The final approach follows this sequence:
+
+1. Audit the raw datasets without modifying them.
+2. Create controlled working copies for preprocessing.
+3. Standardize dates, categorical fields, and district identifiers.
+4. Validate district and district-month relationships.
+5. Save validated processed datasets separately from the raw data.
+6. Quantify 24-month panel coverage.
+7. Classify districts below 60% panel coverage as UNKNOWN.
+8. Construct an independent Demand Signal without Kestrel sales.
+9. Calculate Distribution Gap from Kestrel versus category stocking.
+10. Calculate Competitive Intensity from the top two competitors.
+11. Apply the assessment-specified WCI formula:
+   
+   `WCI = 0.45 × Demand Signal + 0.35 × Distribution Gap + 0.20 × (1 − Competitive Intensity)`
+   
+12. Rank all 340 districts.
+13. Apply the assessment recommendation conditions:
+   
+   - WCI ≥ 0.70
+   - Distribution Gap ≥ 0.40
+   - Panel Coverage ≥ 60%
+   
+14. Keep UNKNOWN districts separate from recommended expansion targets.
+15. Size the top five recommended opportunities in ₹.
+16. Classify each top opportunity as requiring Distribution, Marketing, or Both.
+17. Explicitly identify pale districts that should not receive expansion priority.
