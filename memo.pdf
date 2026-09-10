@@ -1,0 +1,125 @@
+Kestrel Beverages — Empty On The Map
+Decision Memo
+
+To: Anita Deshmukh, Commercial Director
+Subject: Identifying genuine whitespace markets for expansion
+
+Executive Recommendation
+
+A pale district on the sales map does not automatically mean untapped demand. Low Kestrel sales can happen because of weak demand, weak distribution, or insufficient panel coverage.
+
+Our approach therefore does not use Kestrel sales alone to decide where to invest. We first check whether the panel provides enough reliable evidence, then evaluate independent demand, distribution whitespace and competitive intensity.
+
+I recommend prioritising a district only when all three required conditions are met:
+
+WCI ≥ 0.70
+Distribution Gap ≥ 0.40
+Panel Coverage ≥ 60%
+
+This identifies 25 recommended target districts. The five highest-ranked opportunities are Dharwad, Paschim Bardhaman, Warangal, Ujjain and Vizag.
+
+Key Finding: Panel Coverage Must Come First
+
+The retail panel covers 340 districts over 24 months, giving 8,160 district-month observations.
+
+However, 6,314 observations (77.4%) have panel coverage below 60%. At the district level, 257 of 340 districts have average panel coverage below 60%.
+
+These districts are classified as UNKNOWN, not as zero-demand markets. This is important because a gap in the panel can look exactly like a gap in the market.
+
+How We Separate the Problems
+
+For each district, we ask three questions:
+
+1. Is there demand?
+We use evidence independent of Kestrel's own sales: category velocity, content/social engagement and event registrations.
+
+2. Can consumers buy Kestrel?
+We measure the distribution gap between category availability and Kestrel availability.
+
+3. Can we trust the evidence?
+We check panel coverage before making the decision. Districts below 60% coverage remain UNKNOWN.
+
+This allows us to distinguish:
+
+Weak demand → marketing opportunity is limited
+Weak distribution → distribution expansion is required
+Insufficient evidence → do not reject; improve the data first
+
+Whitespace Confidence Index
+
+The assessment-defined measure is:
+
+WCI = 0.45 × Demand Signal + 0.35 × Distribution Gap + 0.20 × (1 − Competitive Intensity)
+
+Where:
+
+Demand Signal = independent evidence of category demand
+Distribution Gap = 1 − (Kestrel-stocked outlets ÷ category-stocked outlets)
+Competitive Intensity = category volume share held by the top two rivals
+
+A district is recommended only if all three gates are satisfied: WCI ≥ 0.70, Distribution Gap ≥ 0.40 and Panel Coverage ≥ 60%.
+
+Decision Principle
+
+Do not spend marketing money simply because a district is pale. First establish whether consumers want the category and whether Kestrel is available to them.
+
+
+Top Five Expansion Opportunities
+
+The WCI screening identifies 25 districts that meet all required target conditions. The five highest-ranked districts are the strongest candidates for immediate commercial validation.
+
+Rank	District	  State	           WCI	       Distribution Gap	                  Annual Revenue Baseline
+1	Dharwad	        Karnataka	               0.876	     0.932	                                     ₹9.69M
+2	Paschim Bardhaman	West Bengal	   0.873	     0.925	                                     ₹14.84M
+3	Warangal	Telangana	           0.872	     0.928	                                     ₹3.15M
+4	Ujjain	Madhya Pradesh	           0.865	     0.933	                                     ₹9.73M
+5	Vizag	Andhra Pradesh	           0.862	     0.930	                                     ₹14.71M
+
+The combined annualised Kestrel revenue baseline for these five districts is approximately ₹52.11M. This is a commercial sizing baseline, not guaranteed incremental revenue.
+
+What Each Market Needs
+
+All five priority districts show a combination of strong independent category demand and significant distribution whitespace. Therefore, the recommended intervention is both distribution and marketing.
+
+Distribution:
+Prioritise outlets where the category is already sold but Kestrel is not stocked. Expanding availability should come before or alongside demand generation.
+
+Marketing:
+Once availability is established, targeted local marketing can convert existing category demand into Kestrel demand.
+
+This avoids repeating the problem highlighted by the Commercial Director: generating demand in an area where consumers cannot easily buy Kestrel.
+
+Pale Districts Explicitly Rejected
+
+The analysis explicitly rejects 7 reliable pale districts where the available evidence does not support a strong whitespace opportunity.
+
+These districts are rejected using observed analytical evidence, such as weak independent demand or insufficient whitespace. They are not rejected using hidden ground-truth labels.
+
+This distinction is important:
+
+Rejected = reliable evidence indicates the opportunity is weak.
+UNKNOWN = there is not enough reliable panel evidence to make the decision.
+
+Therefore, the 257 low-coverage districts remain UNKNOWN and are not counted as rejected markets.
+
+Commercial Recommendation
+
+The immediate priority should be to validate and expand distribution in the five leading districts, supported by targeted marketing.
+
+At the same time, Kestrel should improve panel evidence in UNKNOWN districts before committing or rejecting investment.
+
+The key decision is not:
+
+“Which districts have the lowest sales?”
+
+It is:
+
+“Where is there reliable evidence of demand, Kestrel has room to improve distribution, and the market is attractive enough to justify investment?”
+
+Bottom Line
+
+Move from a sales map to an evidence-based expansion decision.
+
+The strongest immediate opportunities are Dharwad, Paschim Bardhaman, Warangal, Ujjain and Vizag. Their WCI scores indicate strong whitespace potential, while the coverage gate protects the decision from confusing missing panel evidence with missing market demand.
+
+Recommended action: Distribution + Marketing in the top five; improve evidence in UNKNOWN districts; reject only pale districts supported by reliable negative evidence.
