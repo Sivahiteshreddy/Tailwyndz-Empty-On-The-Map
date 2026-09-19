@@ -1,0 +1,13 @@
+district_id,district,state,status,demand_signal,distribution_gap,competitive_intensity,wci,panel_coverage,action,annualized_baseline_inr,group
+DST_0040,Dharwad,Karnataka,Target,0.935294,0.931602,0.353842,0.876175,0.662,Both,9689256.0,Top 5
+DST_0192,Paschim Bardhaman,West Bengal,Target,0.944608,0.924601,0.37715,0.873254,0.605,Both,14841577.8,Top 5
+DST_0211,Warangal,Telangana,Target,0.919608,0.928409,0.3347,0.871827,0.603,Both,3146747.4,Top 5
+DST_0301,Ujjain,Madhya Pradesh,Target,0.908333,0.933118,0.354095,0.864523,0.734,Both,9725169.6,Top 5
+DST_0271,Vizag,Andhra Pradesh,Target,0.914216,0.930131,0.373373,0.862268,0.702,Both,14705316.0,Top 5
+DST_0321,Panna,Madhya Pradesh,Rejected,0.182,0.144,,0.331,0.61,Reject,,Pale rejected
+DST_0061,Yadgir,Karnataka,Rejected,0.018,0.104,,0.241,0.648,Reject,,Pale rejected
+DST_0174,Dahod,Gujarat,Rejected,0.034,0.155,,0.267,0.604,Reject,,Pale rejected
+DST_0203,Birbhum,West Bengal,Rejected,0.015,0.117,,0.245,0.603,Reject,,Pale rejected
+DST_0129,Budaun,Uttar Pradesh,Rejected,0.02,0.088,,0.237,0.623,Reject,,Pale rejected
+DST_0164,Porbandar,Gujarat,Rejected,0.273,0.426,,0.423,0.622,Reject,,Pale rejected
+DST_0183,Devbhumi Dwarka,Gujarat,Rejected,0.648,0.427,,0.593,0.649,Reject,,Pale rejected
