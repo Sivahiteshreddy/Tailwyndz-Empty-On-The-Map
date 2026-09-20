@@ -1,8 +1,8 @@
-# Kestrel — Empty On The Map Dashboard V4
+# Kestrel — Empty On The Map Dashboard 
 
 This is the Streamlit dashboard companion for the Kestrel market-expansion assessment.
 
-## V4 additions
+## Additions
 - India Opportunity Map using state-level visual anchors with district decision details on hover.
 - Opportunity Shortlist page with all recommended districts.
 - Sortable/filterable-style decision table for WCI, demand, distribution gap and panel coverage.
