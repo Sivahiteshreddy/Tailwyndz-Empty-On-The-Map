@@ -14,6 +14,7 @@ st.set_page_config(
 
 BASE = Path(__file__).parent
 BUNDLED = BASE / "data" / "verified_highlights.csv"
+AUTO_WCI = BASE / "data" / "wci_complete_analysis.csv"
 
 # ---------- Theme ----------
 st.markdown("""
@@ -63,6 +64,10 @@ def load_data():
         help="Supports the project output names such as district_id, District_Name, State_Union_Territory, Demand_Signal, Mean_Distribution_Gap, Mean_Panel_Coverage, Competitiveness and WCI."
     )
     if upload is None:
+        if AUTO_WCI.exists():
+            d = pd.read_csv(AUTO_WCI)
+            source = "Full district WCI output loaded from Dashboard/data/wci_complete_analysis.csv"
+            return d, source
         d = pd.read_csv(BUNDLED)
         source = "Verified project highlights bundled with this dashboard"
         return d, source
